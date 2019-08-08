@@ -91,7 +91,7 @@ resource "aws_dynamodb_table" "default" {
     content {
       hash_key           = global_secondary_index.value.hash_key
       name               = global_secondary_index.value.name
-      non_key_attributes = lookup(global_secondary_index.value, "non_key_attributes", null)
+      #non_key_attributes = lookup(global_secondary_index.value, "non_key_attributes", null)
       projection_type    = global_secondary_index.value.projection_type
       range_key          = lookup(global_secondary_index.value, "range_key", null)
       read_capacity      = lookup(global_secondary_index.value, "read_capacity", null)
