@@ -153,7 +153,7 @@ variable "global_secondary_index_map" {
   type = list(object({
     hash_key           = string
     name               = string
-    non_key_attributes = list(string)
+    #non_key_attributes = list(string)
     projection_type    = string
     range_key          = string
     read_capacity      = number
